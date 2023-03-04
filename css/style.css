@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap');
+/* font-family: 'Outfit', sans-serif; */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Outfit', sans-serif;
+    background-color:  hsl(217, 54%, 11%);
+
+    
+}
+.main-container{
+    margin: auto ;
+    /* border: 2px solid black; */
+    background-color: hsl(216, 50%, 16%);
+    max-width: 300px;
+    border-radius: 20px;
+    margin: 2rem;
+    box-shadow:10px 10px 10px 10px;
+    
+}
+.grid{
+    margin:1rem;
+
+}
+.image img{
+    width: 300px;
+    height: 250px;
+    border-radius: 15px;
+    max-width: 100%;
+    display: block;
+    margin-bottom: 1rem;
+
+    
+}
+   .image{ 
+     position: relative; 
+
+}
+.img-overveiw{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background-color:hsla(178, 100%, 50%, 0.5) ;
+    /* border-radius: 15px;   */
+    display:none ;  
+}
+
+.img-overveiw img{
+    position: absolute;
+    width: 50px;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+.image:hover .img-overveiw{
+    display: block;
+
+}
+p{
+    font-family: 'Outfit', sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    color: hsl(215, 51%, 70%);
+
+
+}
+h2{
+    margin-bottom: 1rem;
+}
+h2 a{
+    color: #fff;
+    font-family:'Outfit', sans-serif; 
+    font-weight: 600;
+    text-decoration: none;
+
+
+}
+h2 a:hover{
+    color: hsl(178, 100%, 50%) ;
+}
+.eth{
+    display: flex;
+    margin: 1rem 0;
+}
+.eth p{
+    color:hsl(178, 100%, 50%) ;
+
+}
+.day{
+    display: flex;
+    margin: 1rem 0;
+
+}
+.flex{
+    display: flex;
+    justify-content: space-between;
+}
+hr{
+    border: 0.1px solid hsl(215, 51%, 70%);;
+}
+footer>p>a{
+    color: #fff;
+    text-decoration: none;
+
+}
+footer>p>a:hover{
+    color:hsl(178, 100%, 50%) ;
+
+}
+footer img{
+    width: 40px;
+    height: 40px;
+    border-radius: 50px;
+}
+footer{
+    display: flex;
+    align-items: center;
+    margin-top: 1rem;
+    justify-content: space-between;
+}
+@media only screen and(max-width:375px) {
+    .main-container{
+        margin: 20px 0;
+    }
+    
+}
